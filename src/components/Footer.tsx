@@ -19,9 +19,7 @@ const quickLinks = [
   { label: "About Us", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Gallery", href: "#gallery" },
-  { label: "Our Team", href: "#stylists" },
-  { label: "Reviews", href: "#reviews" },
-  { label: "Book Now", href: "#book" },
+  { label: "Grand Opening", href: "#grand-opening" },
   { label: "FAQ", href: "#faq" },
   { label: "Location", href: "#location" },
 ];

@@ -32,8 +32,8 @@ export function LogoIcon({
     variant === "white"
       ? "#f8f5f0"
       : variant === "dark"
-      ? "#111111"
-      : "url(#ig)";
+        ? "#cec1c1ff"
+        : "url(#ig)";
 
   return (
     <svg
@@ -102,11 +102,10 @@ export default function Logo({
         style={{
           height: imgH,
           width: imgH * 1.05,
-          mixBlendMode: "screen",   // black bg becomes transparent on dark navbars
         }}
       >
         <Image
-          src="/logo.png"
+          src="/logo-new.png"
           alt="The Luxe Lounge — Luxury Hair Studio"
           fill
           className="object-contain object-left"

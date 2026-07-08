@@ -138,28 +138,7 @@ export default function Hero() {
           </motion.a>
         </motion.div>
 
-        {/* Stats Row */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 1.5 }}
-          className="grid grid-cols-3 md:flex items-center justify-center gap-4 md:gap-12 mt-12 md:mt-16 pt-8 border-t border-[rgba(212,175,55,0.1)] max-w-lg mx-auto"
-        >
-          {[
-            { num: "12+", label: "Years Expertise" },
-            { num: "100+", label: "Happy Clients" },
-            { num: "4.9★", label: "Average Rating" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
-              <div className="font-playfair text-xl md:text-2xl text-[#d4af37] font-bold">
-                {stat.num}
-              </div>
-              <div className="font-inter text-[0.58rem] md:text-[0.62rem] tracking-[0.15em] md:tracking-[0.2em] uppercase text-[rgba(248,245,240,0.45)] mt-1">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </motion.div>
+
       </motion.div>
 
       {/* Scroll Indicator */}
