@@ -145,7 +145,7 @@ export default function Footer() {
               <div className="flex items-start gap-2">
                 <MapPin size={13} className="text-[#d4af37] mt-0.5 flex-shrink-0" />
                 <span className="font-inter text-[0.78rem] text-[rgba(248,245,240,0.45)] leading-relaxed">
-                  Panna Batti Circle, Rai Colony, Barmer, Rajasthan
+                  punch Batti Circle, Rai Colony, Barmer, Rajasthan
                 </span>
               </div>
               <div className="flex items-center gap-2">

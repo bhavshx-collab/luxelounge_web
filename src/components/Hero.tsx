@@ -96,7 +96,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 1.1 }}
           className="font-inter text-[0.65rem] md:text-[0.7rem] tracking-[0.3em] uppercase text-[rgba(212,175,55,0.7)] mb-8 md:mb-10"
         >
-          Panna Batti Circle · Rai Colony · Barmer
+          punch Batti Circle · Rai Colony · Barmer
         </motion.p>
 
         {/* CTA Buttons */}

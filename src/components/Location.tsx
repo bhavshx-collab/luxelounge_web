@@ -28,7 +28,7 @@ export default function Location() {
           >
             <div className="aspect-[4/3] border border-[rgba(212,175,55,0.2)] overflow-hidden">
               <iframe
-                src="https://maps.google.com/maps?q=Panna+Batti+Circle,+Rai+Colony,+Barmer,+Rajasthan&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=Punch+Batti+Circle,+Rai+Colony,+Barmer,+Rajasthan&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="100%"
                 style={{ border: 0, filter: "grayscale(40%) contrast(1.1)" }}
@@ -68,7 +68,7 @@ export default function Location() {
                   Address
                 </p>
                 <p className="font-inter text-[0.9rem] text-[rgba(248,245,240,0.75)] leading-relaxed">
-                  Panna Batti Circle, Rai Colony<br />
+                  Punch Batti Circle, Rai Colony<br />
                   Barmer, Rajasthan — 344001
                 </p>
               </div>
@@ -136,7 +136,7 @@ export default function Location() {
 
             {/* CTA */}
             <a
-              href="https://maps.google.com/maps?q=Panna+Batti+Circle,+Rai+Colony,+Barmer"
+              href="https://maps.google.com/maps?q=Punch+Batti+Circle,+Rai+Colony,+Barmer"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold w-full sm:w-auto justify-center text-center inline-flex"

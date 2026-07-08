@@ -25,7 +25,7 @@ const cormorant = Cormorant_Garamond({
 export const metadata: Metadata = {
   title: "The Luxe Lounge | Luxury Hair Studio — Barmer, Rajasthan",
   description:
-    "Barmer's most premium luxury hair studio. Expert styling, advanced hair treatments, and a bespoke salon experience like no other. Located at Panna Batti Circle, Rai Colony, Barmer.",
+    "Barmer's most premium luxury hair studio. Expert styling, advanced hair treatments, and a bespoke salon experience like no other. Located at Punch Batti Circle, Rai Colony, Barmer.",
   keywords: [
     "luxury salon Barmer",
     "hair studio Barmer",
