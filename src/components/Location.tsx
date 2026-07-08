@@ -109,10 +109,10 @@ export default function Location() {
                   Phone
                 </p>
                 <a
-                  href="tel:+918949286276"
+                  href="tel:+918875XXXXXX"
                   className="font-inter text-[0.9rem] text-[rgba(248,245,240,0.75)] hover:text-[#d4af37] transition-colors"
                 >
-                  +91 89492 86276
+                  +91 8875XXXXXX
                 </a>
               </div>
             </div>

@@ -2,6 +2,7 @@
 
 import { Phone, MessageCircle, Mail, MapPin } from "lucide-react";
 import { useState } from "react";
+import Logo from "./ui/Logo";
 
 function InstaIcon({ size = 15, className = "" }: { size?: number; className?: string }) {
   return (
@@ -59,15 +60,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="mb-6">
-              <p className="font-cormorant text-[0.7rem] tracking-[0.5em] text-[#d4af37] uppercase mb-1">
-                The
-              </p>
-              <h2 className="font-playfair text-2xl font-bold tracking-[0.05em] text-[#f8f5f0]">
-                LUXE LOUNGE
-              </h2>
-              <p className="font-cormorant text-[0.8rem] italic text-[rgba(212,175,55,0.6)] mt-1">
-                Luxury Redefined
-              </p>
+              <Logo layout="horizontal" size="md" />
             </div>
 
             <div className="gold-line-left mb-5" style={{ width: "2rem" }} />
@@ -80,8 +73,8 @@ export default function Footer() {
             <div className="flex items-center gap-3">
               {[
                 { icon: InstaIcon, href: "https://instagram.com/theluxelounge", label: "Instagram" },
-                { icon: MessageCircle, href: "https://wa.me/918949286276", label: "WhatsApp" },
-                { icon: Phone, href: "tel:+918949286276", label: "Call" },
+                { icon: MessageCircle, href: "https://wa.me/918875XXXXXX", label: "WhatsApp" },
+                { icon: Phone, href: "tel:+918875XXXXXX", label: "Call" },
               ].map(({ icon: Icon, href, label }) => (
                 <a
                   key={label}
@@ -150,8 +143,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone size={13} className="text-[#d4af37] flex-shrink-0" />
-                <a href="tel:+918949286276" className="font-inter text-[0.78rem] text-[rgba(248,245,240,0.45)] hover:text-[#d4af37] transition-colors">
-                  +91 89492 86276
+                <a href="tel:+918875XXXXXX" className="font-inter text-[0.78rem] text-[rgba(248,245,240,0.45)] hover:text-[#d4af37] transition-colors">
+                  +91 8875XXXXXX
                 </a>
               </div>
               <div className="flex items-center gap-2">

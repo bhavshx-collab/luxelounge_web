@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown, Phone, MessageCircle } from "lucide-react";
+import { LogoIcon } from "./ui/Logo";
 
 export default function Hero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -67,7 +68,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+          className="flex flex-col items-center"
         >
+          <div className="mb-6 opacity-95">
+            <LogoIcon size="lg" variant="gold" />
+          </div>
           <p className="font-cormorant text-[1rem] tracking-[0.5em] text-[#d4af37] uppercase mb-3 font-light italic">
             The Luxe Lounge
           </p>

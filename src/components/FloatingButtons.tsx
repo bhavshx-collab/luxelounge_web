@@ -63,7 +63,7 @@ export default function FloatingButtons() {
         </AnimatePresence>
 
         <motion.a
-          href="tel:+918949286276"
+          href="tel:+918875XXXXXX"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           className="w-11 h-11 md:w-[52px] md:h-[52px] rounded-full bg-[#d4af37] flex items-center justify-center shadow-[0_4px_20px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_32px_rgba(212,175,55,0.6)] transition-shadow"
@@ -96,7 +96,7 @@ export default function FloatingButtons() {
         </AnimatePresence>
 
         <motion.a
-          href="https://wa.me/918949286276?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20The%20Luxe%20Lounge."
+          href="https://wa.me/918875XXXXXX?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20at%20The%20Luxe%20Lounge."
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}

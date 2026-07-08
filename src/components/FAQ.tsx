@@ -29,27 +29,24 @@ export default function FAQ() {
               initial={{ opacity: 0, y: 16 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.07 }}
-              className={`border transition-all duration-400 ${
-                openId === faq.id
-                  ? "border-[rgba(212,175,55,0.4)] bg-[rgba(212,175,55,0.03)]"
-                  : "border-[rgba(212,175,55,0.1)] bg-transparent hover:border-[rgba(212,175,55,0.25)]"
-              }`}
+              className={`border transition-all duration-400 ${openId === faq.id
+                ? "border-[rgba(212,175,55,0.4)] bg-[rgba(212,175,55,0.03)]"
+                : "border-[rgba(212,175,55,0.1)] bg-transparent hover:border-[rgba(212,175,55,0.25)]"
+                }`}
             >
               <button
                 onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
                 className="w-full flex items-center justify-between p-5 md:p-6 text-left"
               >
                 <span
-                  className={`font-playfair text-[0.95rem] md:text-[1rem] font-semibold leading-snug transition-colors duration-300 ${
-                    openId === faq.id ? "text-[#d4af37]" : "text-[#f8f5f0]"
-                  }`}
+                  className={`font-playfair text-[0.95rem] md:text-[1rem] font-semibold leading-snug transition-colors duration-300 ${openId === faq.id ? "text-[#d4af37]" : "text-[#f8f5f0]"
+                    }`}
                 >
                   {faq.question}
                 </span>
                 <div
-                  className={`flex-shrink-0 ml-4 transition-colors duration-300 ${
-                    openId === faq.id ? "text-[#d4af37]" : "text-[rgba(248,245,240,0.3)]"
-                  }`}
+                  className={`flex-shrink-0 ml-4 transition-colors duration-300 ${openId === faq.id ? "text-[#d4af37]" : "text-[rgba(248,245,240,0.3)]"
+                    }`}
                 >
                   {openId === faq.id ? <Minus size={16} /> : <Plus size={16} />}
                 </div>
@@ -88,14 +85,14 @@ export default function FAQ() {
           </p>
           <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full px-4 sm:px-0 max-w-sm sm:max-w-none mx-auto">
             <a
-              href="https://wa.me/918949286276"
+              href="https://wa.me/918875XXXXXX"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-gold w-full sm:w-auto text-center justify-center"
             >
               <span>WhatsApp Us</span>
             </a>
-            <a href="tel:+918949286276" className="btn-outline-gold w-full sm:w-auto text-center justify-center">
+            <a href="tel:+918875XXXXXX" className="btn-outline-gold w-full sm:w-auto text-center justify-center">
               <span>Call Now</span>
             </a>
           </div>

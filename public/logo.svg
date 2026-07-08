@@ -1,0 +1,40 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logo-gold-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b8960e" />
+      <stop offset="25%" stop-color="#e8c84a" />
+      <stop offset="50%" stop-color="#d4af37" />
+      <stop offset="75%" stop-color="#c8a96a" />
+      <stop offset="100%" stop-color="#b8960e" />
+    </linearGradient>
+  </defs>
+
+  <!-- Elegant Circle Frame -->
+  <circle cx="50" cy="50" r="44" stroke="url(#logo-gold-gradient)" stroke-width="2.5" opacity="0.9" />
+
+  <!-- Interlocking Monogram "LL" -->
+  <!-- Letter 1 (Left & Higher) -->
+  <g>
+    <!-- Top Serif L1 -->
+    <path d="M 32 28 H 44" stroke="url(#logo-gold-gradient)" stroke-width="3" stroke-linecap="round" />
+    <!-- Stem L1 -->
+    <path d="M 38 28 V 68" stroke="url(#logo-gold-gradient)" stroke-width="3" stroke-linecap="round" />
+    <!-- Foot L1 with Gap for Interlocking -->
+    <path d="M 38 68 H 43.5" stroke="url(#logo-gold-gradient)" stroke-width="3" stroke-linecap="round" />
+    <path d="M 52.5 68 H 62" stroke="url(#logo-gold-gradient)" stroke-width="3" stroke-linecap="round" />
+    <!-- Foot Serif L1 -->
+    <path d="M 62 62 V 74" stroke="url(#logo-gold-gradient)" stroke-width="3" stroke-linecap="round" />
+  </g>
+
+  <!-- Letter 2 (Right & Lower) -->
+  <g>
+    <!-- Top Serif L2 -->
+    <path d="M 42 38 H 54" stroke="url(#logo-gold-gradient)" stroke-width="3" stroke-linecap="round" />
+    <!-- Stem L2 (Passes over L1 foot) -->
+    <path d="M 48 38 V 78" stroke="url(#logo-gold-gradient)" stroke-width="3" stroke-linecap="round" />
+    <!-- Foot L2 -->
+    <path d="M 48 78 H 72" stroke="url(#logo-gold-gradient)" stroke-width="3" stroke-linecap="round" />
+    <!-- Foot Serif L2 -->
+    <path d="M 72 72 V 84" stroke="url(#logo-gold-gradient)" stroke-width="3" stroke-linecap="round" />
+  </g>
+</svg>

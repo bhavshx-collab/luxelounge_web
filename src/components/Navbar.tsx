@@ -4,13 +4,14 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
+import Logo from "./ui/Logo";
 
 const navLinks = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
   { label: "Gallery", href: "#gallery" },
-  { label: "Stylists", href: "#stylists" },
-  { label: "Reviews", href: "#reviews" },
+  { label: "Opening", href: "#grand-opening" },
+  { label: "Location", href: "#location" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -47,20 +48,15 @@ export default function Navbar() {
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between h-[72px]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex items-center justify-between h-[80px]">
           {/* Logo */}
           <motion.a
             href="#hero"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            className="flex flex-col cursor-pointer"
+            className="flex items-center cursor-pointer"
             whileHover={{ scale: 1.02 }}
           >
-            <span className="font-cormorant text-[10px] tracking-[0.4em] text-[#d4af37] uppercase font-light">
-              The
-            </span>
-            <span className="font-playfair text-[1.2rem] font-bold tracking-[0.08em] text-[#f8f5f0] leading-tight">
-              LUXE LOUNGE
-            </span>
+            <Logo size={64} showTagline={false} />
           </motion.a>
 
           {/* Desktop Nav */}
@@ -112,9 +108,7 @@ export default function Navbar() {
             className="fixed inset-0 z-[800] bg-[#0b0b0b] flex flex-col items-center justify-center gap-8 lg:hidden"
           >
             <div className="absolute top-0 left-0 right-0 h-[72px] flex items-center justify-between px-6">
-              <span className="font-playfair text-[1.1rem] font-bold tracking-[0.08em] text-[#f8f5f0]">
-                LUXE LOUNGE
-              </span>
+              <Logo size={52} showTagline={false} />
               <button
                 onClick={() => setMenuOpen(false)}
                 className="text-[#f8f5f0] p-2"
