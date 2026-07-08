@@ -27,10 +27,10 @@ export default function Reviews() {
   const doubled = [...reviews, ...reviews];
 
   return (
-    <section id="reviews" className="py-28 bg-[#0d0d0d] overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 mb-16">
+    <section id="reviews" className="py-16 md:py-24 lg:py-28 bg-[#0d0d0d] overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 mb-12 md:mb-16">
         {/* Header with rating */}
-        <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-8">
+        <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-6 md:gap-8">
           <SectionHeader
             label="Client Love"
             title="What our guests"
@@ -38,9 +38,9 @@ export default function Reviews() {
             align="left"
           />
 
-          <div className="flex-shrink-0 text-right">
-            <div className="font-playfair text-7xl font-bold text-[#d4af37] leading-none">4.9</div>
-            <div className="flex justify-end gap-0.5 mt-2">
+          <div className="flex-shrink-0 text-left md:text-right">
+            <div className="font-playfair text-6xl md:text-7xl font-bold text-[#d4af37] leading-none">4.9</div>
+            <div className="flex justify-start md:justify-end gap-0.5 mt-2">
               {Array.from({ length: 5 }).map((_, i) => (
                 <span key={i} className="text-xl text-[#d4af37]">★</span>
               ))}

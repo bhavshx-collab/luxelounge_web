@@ -20,8 +20,8 @@ export default function Stylists() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="stylists" className="py-28 bg-[#111111]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section id="stylists" className="py-16 md:py-24 lg:py-28 bg-[#111111]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <SectionHeader
           label="Meet The Artists"
           title="The hands behind"
@@ -48,8 +48,8 @@ export default function Stylists() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[rgba(0,0,0,0.7)] to-transparent" />
 
-                {/* Instagram Hover */}
-                <div className="absolute inset-0 bg-[rgba(212,175,55,0.12)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                {/* Instagram Hover (Desktop) */}
+                <div className="absolute inset-0 bg-[rgba(212,175,55,0.12)] opacity-0 group-hover:opacity-100 transition-opacity duration-500 hidden md:flex items-center justify-center">
                   {stylist.instagram && (
                     <div className="flex flex-col items-center gap-2">
                       <InstagramIcon className="text-white" size={28} />
@@ -73,9 +73,23 @@ export default function Stylists() {
                 <h3 className="font-playfair text-[1.25rem] font-bold text-[#f8f5f0] mb-1">
                   {stylist.name}
                 </h3>
-                <p className="font-inter text-[0.7rem] tracking-[0.2em] uppercase text-[#d4af37] mb-2">
-                  {stylist.role}
-                </p>
+                <div className="flex items-center justify-between gap-2 mb-2">
+                  <p className="font-inter text-[0.7rem] tracking-[0.2em] uppercase text-[#d4af37]">
+                    {stylist.role}
+                  </p>
+                  {stylist.instagram && (
+                    <a
+                      href={`https://instagram.com/${stylist.instagram.replace("@", "")}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[rgba(248,245,240,0.45)] hover:text-[#d4af37] transition-colors md:hidden flex items-center gap-1"
+                      aria-label={`${stylist.name}'s Instagram`}
+                    >
+                      <InstagramIcon size={14} />
+                      <span className="font-inter text-[0.65rem] tracking-wider">{stylist.instagram}</span>
+                    </a>
+                  )}
+                </div>
                 <div className="gold-line-left mb-3" style={{ width: "3rem" }} />
                 <p className="font-inter text-[0.8rem] text-[rgba(248,245,240,0.5)] leading-relaxed mb-3">
                   {stylist.bio}

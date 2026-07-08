@@ -21,7 +21,7 @@ export default function FloatingButtons() {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-[998] flex flex-col items-end gap-3">
+    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-[998] flex flex-col items-end gap-2 md:gap-3">
       {/* Back to Top */}
       <AnimatePresence>
         {showTop && (
@@ -32,10 +32,10 @@ export default function FloatingButtons() {
             whileHover={{ scale: 1.1, y: -2 }}
             whileTap={{ scale: 0.9 }}
             onClick={scrollToTop}
-            className="w-11 h-11 bg-[rgba(17,17,17,0.9)] border border-[rgba(212,175,55,0.3)] flex items-center justify-center text-[#d4af37] hover:border-[rgba(212,175,55,0.7)] transition-colors backdrop-blur-sm"
+            className="w-9 h-9 md:w-11 md:h-11 bg-[rgba(17,17,17,0.9)] border border-[rgba(212,175,55,0.3)] flex items-center justify-center text-[#d4af37] hover:border-[rgba(212,175,55,0.7)] transition-colors backdrop-blur-sm"
             aria-label="Back to top"
           >
-            <ArrowUp size={16} />
+            <ArrowUp className="w-4 h-4 md:w-[16px] md:h-[16px]" />
           </motion.button>
         )}
       </AnimatePresence>
@@ -55,7 +55,7 @@ export default function FloatingButtons() {
               initial={{ opacity: 0, x: 10 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 10 }}
-              className="glass-dark px-3 py-1.5 font-inter text-[0.7rem] tracking-[0.1em] text-[#f8f5f0] whitespace-nowrap"
+              className="hidden md:inline-block glass-dark px-3 py-1.5 font-inter text-[0.7rem] tracking-[0.1em] text-[#f8f5f0] whitespace-nowrap"
             >
               Call Now
             </motion.span>
@@ -66,10 +66,10 @@ export default function FloatingButtons() {
           href="tel:+918949286276"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="w-13 h-13 w-[52px] h-[52px] rounded-full bg-[#d4af37] flex items-center justify-center shadow-[0_4px_20px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_32px_rgba(212,175,55,0.6)] transition-shadow"
+          className="w-11 h-11 md:w-[52px] md:h-[52px] rounded-full bg-[#d4af37] flex items-center justify-center shadow-[0_4px_20px_rgba(212,175,55,0.4)] hover:shadow-[0_8px_32px_rgba(212,175,55,0.6)] transition-shadow"
           aria-label="Call us"
         >
-          <Phone size={20} className="text-[#111]" />
+          <Phone className="text-[#111] w-[18px] h-[18px] md:w-[20px] md:h-[20px]" />
         </motion.a>
       </motion.div>
 
@@ -88,7 +88,7 @@ export default function FloatingButtons() {
               initial={{ opacity: 0, x: 10 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: 10 }}
-              className="glass-dark px-3 py-1.5 font-inter text-[0.7rem] tracking-[0.1em] text-[#f8f5f0] whitespace-nowrap"
+              className="hidden md:inline-block glass-dark px-3 py-1.5 font-inter text-[0.7rem] tracking-[0.1em] text-[#f8f5f0] whitespace-nowrap"
             >
               Chat on WhatsApp
             </motion.span>
@@ -101,10 +101,10 @@ export default function FloatingButtons() {
           rel="noopener noreferrer"
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
-          className="w-[52px] h-[52px] rounded-full bg-[#25D366] flex items-center justify-center shadow-[0_4px_20px_rgba(37,211,102,0.35)] hover:shadow-[0_8px_32px_rgba(37,211,102,0.5)] transition-shadow"
+          className="w-11 h-11 md:w-[52px] md:h-[52px] rounded-full bg-[#25D366] flex items-center justify-center shadow-[0_4px_20px_rgba(37,211,102,0.35)] hover:shadow-[0_8px_32px_rgba(37,211,102,0.5)] transition-shadow"
           aria-label="Chat on WhatsApp"
         >
-          <MessageCircle size={22} className="text-white" fill="white" />
+          <MessageCircle className="text-white w-[18px] h-[18px] md:w-[22px] md:h-[22px]" fill="white" />
         </motion.a>
       </motion.div>
     </div>

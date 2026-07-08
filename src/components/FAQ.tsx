@@ -13,8 +13,8 @@ export default function FAQ() {
   const [openId, setOpenId] = useState<string | null>("1");
 
   return (
-    <section id="faq" className="py-28 bg-[#111111]">
-      <div className="max-w-4xl mx-auto px-6 lg:px-12">
+    <section id="faq" className="py-16 md:py-24 lg:py-28 bg-[#111111]">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-12">
         <SectionHeader
           label="Questions"
           title="Everything you need"
@@ -37,10 +37,10 @@ export default function FAQ() {
             >
               <button
                 onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
-                className="w-full flex items-center justify-between p-6 text-left"
+                className="w-full flex items-center justify-between p-5 md:p-6 text-left"
               >
                 <span
-                  className={`font-playfair text-[1rem] font-semibold leading-snug transition-colors duration-300 ${
+                  className={`font-playfair text-[0.95rem] md:text-[1rem] font-semibold leading-snug transition-colors duration-300 ${
                     openId === faq.id ? "text-[#d4af37]" : "text-[#f8f5f0]"
                   }`}
                 >
@@ -64,9 +64,9 @@ export default function FAQ() {
                     transition={{ duration: 0.35, ease: [0.25, 0.46, 0.45, 0.94] }}
                     className="overflow-hidden"
                   >
-                    <div className="px-6 pb-6">
+                    <div className="px-5 pb-5 md:px-6 md:pb-6">
                       <div className="gold-line-left mb-4" style={{ width: "2rem" }} />
-                      <p className="font-inter text-[0.87rem] text-[rgba(248,245,240,0.6)] leading-relaxed">
+                      <p className="font-inter text-[0.85rem] md:text-[0.87rem] text-[rgba(248,245,240,0.6)] leading-relaxed">
                         {faq.answer}
                       </p>
                     </div>
@@ -86,16 +86,16 @@ export default function FAQ() {
           <p className="font-inter text-[0.85rem] text-[rgba(248,245,240,0.4)] mb-4">
             Still have questions? We're happy to help.
           </p>
-          <div className="flex flex-wrap justify-center gap-4">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 w-full px-4 sm:px-0 max-w-sm sm:max-w-none mx-auto">
             <a
               href="https://wa.me/918949286276"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-gold"
+              className="btn-gold w-full sm:w-auto text-center justify-center"
             >
               <span>WhatsApp Us</span>
             </a>
-            <a href="tel:+918949286276" className="btn-outline-gold">
+            <a href="tel:+918949286276" className="btn-outline-gold w-full sm:w-auto text-center justify-center">
               <span>Call Now</span>
             </a>
           </div>

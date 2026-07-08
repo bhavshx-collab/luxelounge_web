@@ -42,7 +42,7 @@ export default function BookAppointment() {
   ];
 
   return (
-    <section id="book" className="py-28 relative overflow-hidden">
+    <section id="book" className="py-16 md:py-24 lg:py-28 relative overflow-hidden">
       {/* BG */}
       <div className="absolute inset-0 bg-[#0a0a0a]" />
       <div
@@ -52,7 +52,7 @@ export default function BookAppointment() {
         }}
       />
 
-      <div ref={ref} className="relative z-10 max-w-5xl mx-auto px-6 lg:px-12">
+      <div ref={ref} className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-12">
         <SectionHeader
           label="Book Your Visit"
           title="Reserve your"
@@ -93,7 +93,7 @@ export default function BookAppointment() {
             animate={inView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.7, delay: 0.3 }}
             onSubmit={handleSubmit}
-            className="border border-[rgba(212,175,55,0.12)] p-8 md:p-12 bg-[rgba(255,255,255,0.02)]"
+            className="border border-[rgba(212,175,55,0.12)] p-5 sm:p-8 md:p-12 bg-[rgba(255,255,255,0.02)]"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
               <div>

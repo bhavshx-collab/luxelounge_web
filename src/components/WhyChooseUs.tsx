@@ -48,7 +48,7 @@ const container = {
 
 const item = {
   hidden: { opacity: 0, y: 30 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] } },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.25, 0.46, 0.45, 0.94] as const } },
 };
 
 export default function WhyChooseUs() {
@@ -56,13 +56,13 @@ export default function WhyChooseUs() {
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section className="relative py-28 overflow-hidden bg-[#0d0d0d]">
+    <section className="relative py-16 md:py-24 lg:py-28 overflow-hidden bg-[#0d0d0d]">
       {/* Background gold glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] opacity-5 pointer-events-none"
         style={{ background: "radial-gradient(ellipse at center, #d4af37 0%, transparent 70%)" }}
       />
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <SectionHeader
           label="Why The Luxe Lounge"
           title="Not just a salon."
@@ -81,7 +81,7 @@ export default function WhyChooseUs() {
             <motion.div
               key={pillar.title}
               variants={item}
-              className="luxury-card bg-[rgba(255,255,255,0.02)] p-8 group cursor-default"
+              className="luxury-card bg-[rgba(255,255,255,0.02)] p-6 md:p-8 group cursor-default"
             >
               <div className="text-3xl text-[#d4af37] mb-5 group-hover:scale-110 transition-transform duration-300">
                 {pillar.icon}
@@ -102,9 +102,9 @@ export default function WhyChooseUs() {
           initial={{ opacity: 0, y: 20 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-20 text-center"
+          className="mt-12 md:mt-20 text-center"
         >
-          <blockquote className="font-cormorant text-[1.8rem] md:text-[2.2rem] italic text-[rgba(248,245,240,0.75)] leading-snug max-w-3xl mx-auto">
+          <blockquote className="font-cormorant text-[1.5rem] md:text-[2.2rem] italic text-[rgba(248,245,240,0.75)] leading-snug max-w-3xl mx-auto">
             "We believe beauty is not a luxury —{" "}
             <span className="text-[#d4af37] not-italic font-semibold">
               it's your right.

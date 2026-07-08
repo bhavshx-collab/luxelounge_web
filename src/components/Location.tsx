@@ -15,8 +15,8 @@ export default function Location() {
   ];
 
   return (
-    <section id="location" className="py-28 bg-[#0d0d0d]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section id="location" className="py-16 md:py-24 lg:py-28 bg-[#0d0d0d]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <div className="section-label mb-5">Find Us</div>
         <div ref={ref} className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
           {/* Map */}
@@ -39,8 +39,8 @@ export default function Location() {
               />
             </div>
             {/* Gold corners */}
-            <div className="absolute -top-2 -left-2 w-12 h-12 border-t-2 border-l-2 border-[rgba(212,175,55,0.5)]" />
-            <div className="absolute -bottom-2 -right-2 w-12 h-12 border-b-2 border-r-2 border-[rgba(212,175,55,0.5)]" />
+            <div className="absolute top-0 left-0 sm:-top-2 sm:-left-2 w-12 h-12 border-t-2 border-l-2 border-[rgba(212,175,55,0.5)]" />
+            <div className="absolute bottom-0 right-0 sm:-bottom-2 sm:-right-2 w-12 h-12 border-b-2 border-r-2 border-[rgba(212,175,55,0.5)]" />
           </motion.div>
 
           {/* Info */}
@@ -139,7 +139,7 @@ export default function Location() {
               href="https://maps.google.com/maps?q=Panna+Batti+Circle,+Rai+Colony,+Barmer"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-gold inline-flex"
+              className="btn-gold w-full sm:w-auto justify-center text-center inline-flex"
             >
               <MapPin size={14} />
               <span>Get Directions</span>

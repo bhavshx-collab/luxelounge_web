@@ -68,8 +68,8 @@ export default function Gallery() {
   const [lightboxImg, setLightboxImg] = useState<string | null>(null);
 
   return (
-    <section id="gallery" className="py-28 bg-[#0d0d0d]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section id="gallery" className="py-16 md:py-24 lg:py-28 bg-[#0d0d0d]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <SectionHeader
           label="Our Work"
           title="Where craft"
@@ -80,7 +80,7 @@ export default function Gallery() {
         {/* Masonry Grid */}
         <motion.div
           ref={ref}
-          className="grid grid-cols-2 md:grid-cols-3 gap-3 auto-rows-[200px]"
+          className="grid grid-cols-2 md:grid-cols-3 gap-3 auto-rows-[160px] sm:auto-rows-[200px]"
         >
           {galleryImages.map((img, i) => (
             <motion.div

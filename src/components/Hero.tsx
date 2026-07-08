@@ -71,7 +71,7 @@ export default function Hero() {
           <p className="font-cormorant text-[1rem] tracking-[0.5em] text-[#d4af37] uppercase mb-3 font-light italic">
             The Luxe Lounge
           </p>
-          <h1 className="font-playfair text-[clamp(3.5rem,9vw,8rem)] font-bold text-[#f8f5f0] leading-[0.9] tracking-[-0.02em] mb-4">
+          <h1 className="font-playfair text-[clamp(2.4rem,8vw,7.5rem)] font-bold text-[#f8f5f0] leading-[0.95] tracking-[-0.02em] mb-4">
             Luxury
             <br />
             <span className="italic text-gold-gradient">Redefined.</span>
@@ -83,7 +83,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.9 }}
-          className="font-inter text-[1rem] text-[rgba(248,245,240,0.65)] leading-relaxed max-w-xl mx-auto mt-6 mb-10 tracking-wide"
+          className="font-inter text-[0.95rem] md:text-[1rem] text-[rgba(248,245,240,0.65)] leading-relaxed max-w-xl mx-auto mt-4 md:mt-6 mb-8 md:mb-10 tracking-wide"
         >
           Premium Hair Studio bringing world-class luxury hair care and
           transformative styling to Barmer, Rajasthan.
@@ -94,7 +94,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.1 }}
-          className="font-inter text-[0.7rem] tracking-[0.3em] uppercase text-[rgba(212,175,55,0.7)] mb-10"
+          className="font-inter text-[0.65rem] md:text-[0.7rem] tracking-[0.3em] uppercase text-[rgba(212,175,55,0.7)] mb-8 md:mb-10"
         >
           Panna Batti Circle · Rai Colony · Barmer
         </motion.p>
@@ -104,7 +104,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 1.2 }}
-          className="flex flex-wrap items-center justify-center gap-4"
+          className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 max-w-sm sm:max-w-none mx-auto w-full px-4 sm:px-0"
         >
           <motion.a
             href="#book"
@@ -114,7 +114,7 @@ export default function Hero() {
             }}
             whileHover={{ scale: 1.03, y: -2 }}
             whileTap={{ scale: 0.97 }}
-            className="btn-gold rounded-none"
+            className="btn-gold rounded-none w-full sm:w-auto text-center"
           >
             <span>Book Appointment</span>
           </motion.a>
@@ -127,7 +127,7 @@ export default function Hero() {
             }}
             whileHover={{ scale: 1.03, y: -2 }}
             whileTap={{ scale: 0.97 }}
-            className="btn-outline-gold"
+            className="btn-outline-gold w-full sm:w-auto text-center"
           >
             <span>Explore Services</span>
           </motion.a>
@@ -138,7 +138,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 1.5 }}
-          className="flex items-center justify-center gap-8 mt-16 pt-8 border-t border-[rgba(212,175,55,0.1)]"
+          className="grid grid-cols-3 md:flex items-center justify-center gap-4 md:gap-12 mt-12 md:mt-16 pt-8 border-t border-[rgba(212,175,55,0.1)] max-w-lg mx-auto"
         >
           {[
             { num: "12+", label: "Years Expertise" },
@@ -146,10 +146,10 @@ export default function Hero() {
             { num: "4.9★", label: "Average Rating" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
-              <div className="font-playfair text-2xl text-[#d4af37] font-bold">
+              <div className="font-playfair text-xl md:text-2xl text-[#d4af37] font-bold">
                 {stat.num}
               </div>
-              <div className="font-inter text-[0.62rem] tracking-[0.2em] uppercase text-[rgba(248,245,240,0.45)] mt-1">
+              <div className="font-inter text-[0.58rem] md:text-[0.62rem] tracking-[0.15em] md:tracking-[0.2em] uppercase text-[rgba(248,245,240,0.45)] mt-1">
                 {stat.label}
               </div>
             </div>

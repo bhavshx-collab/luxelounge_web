@@ -58,10 +58,10 @@ export default function InstagramFeed() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="py-28 bg-[#111111]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section className="py-16 md:py-24 lg:py-28 bg-[#111111]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-10 md:mb-12">
           <div className="section-label justify-center mb-4">Instagram</div>
           <h2 className="font-playfair text-[clamp(2rem,4.5vw,3.2rem)] font-bold text-[#f8f5f0] mb-3">
             Follow our{" "}
@@ -98,7 +98,7 @@ export default function InstagramFeed() {
               />
               {/* Hover overlay */}
               <div className="absolute inset-0 bg-[rgba(0,0,0,0.7)] opacity-0 group-hover:opacity-100 transition-all duration-400 flex flex-col items-center justify-center gap-3 p-4">
-              <InstaIcon className="text-[#d4af37]" size={24} />
+                <InstaIcon className="text-[#d4af37]" size={24} />
                 <p className="font-inter text-[0.72rem] text-white text-center leading-snug">
                   {post.caption}
                 </p>
@@ -117,13 +117,13 @@ export default function InstagramFeed() {
           initial={{ opacity: 0, y: 16 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.6 }}
-          className="text-center mt-10"
+          className="text-center mt-10 px-4 sm:px-0"
         >
           <a
             href="https://www.instagram.com/theluxelounge_2026/"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-gold inline-flex items-center gap-2"
+            className="btn-gold w-full sm:w-auto inline-flex items-center gap-2 justify-center text-center"
           >
             <InstaIcon size={16} />
             <span>Follow on Instagram</span>

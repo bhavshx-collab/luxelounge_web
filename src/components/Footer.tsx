@@ -54,7 +54,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#0a0a0a] border-t border-[rgba(212,175,55,0.08)]">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -198,7 +198,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-[rgba(212,175,55,0.06)] py-6">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="font-inter text-[0.72rem] text-[rgba(248,245,240,0.25)]">
             © {new Date().getFullYear()} The Luxe Lounge. All rights reserved. Barmer, Rajasthan.
           </p>

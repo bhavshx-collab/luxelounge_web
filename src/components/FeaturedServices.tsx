@@ -36,10 +36,10 @@ export default function FeaturedServices() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="py-28 bg-[#0d0d0d]">
-      <div ref={ref} className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section className="py-16 md:py-24 lg:py-28 bg-[#0d0d0d]">
+      <div ref={ref} className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         {/* Header */}
-        <div className="flex items-end justify-between mb-14 flex-wrap gap-4">
+        <div className="flex items-end justify-between mb-10 md:mb-14 flex-wrap gap-4">
           <div>
             <div className="section-label mb-4">Featured Experiences</div>
             <h2 className="font-playfair text-[clamp(2rem,4.5vw,3.5rem)] font-bold text-[#f8f5f0] leading-tight">
@@ -87,15 +87,15 @@ export default function FeaturedServices() {
                 </div>
 
                 {/* Content */}
-                <div className="absolute bottom-0 left-0 right-0 p-7">
+                <div className="absolute bottom-0 left-0 right-0 p-5 md:p-7">
                   <p className="font-inter text-[0.65rem] tracking-[0.25em] uppercase text-[rgba(212,175,55,0.7)] mb-2">
                     {item.subtitle}
                   </p>
-                  <h3 className="font-playfair text-[1.7rem] font-bold text-white mb-3 leading-tight">
+                  <h3 className="font-playfair text-[1.5rem] md:text-[1.7rem] font-bold text-white mb-3 leading-tight">
                     {item.title}
                   </h3>
                   <div className="h-px bg-[rgba(212,175,55,0.3)] mb-4 group-hover:bg-[rgba(212,175,55,0.7)] transition-colors duration-400" />
-                  <p className="font-inter text-[0.82rem] text-[rgba(255,255,255,0.6)] leading-relaxed mb-5 transform translate-y-2 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
+                  <p className="font-inter text-[0.8rem] md:text-[0.82rem] text-[rgba(255,255,255,0.6)] leading-relaxed mb-5 md:transform md:translate-y-2 md:opacity-0 md:group-hover:opacity-100 md:group-hover:translate-y-0 transition-all duration-500">
                     {item.description}
                   </p>
                   <button
@@ -111,6 +111,21 @@ export default function FeaturedServices() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* Mobile CTA */}
+        <div className="mt-8 flex justify-center md:hidden">
+          <motion.a
+            href="#book"
+            onClick={(e) => {
+              e.preventDefault();
+              document.querySelector("#book")?.scrollIntoView({ behavior: "smooth" });
+            }}
+            whileHover={{ scale: 1.02, y: -2 }}
+            className="btn-outline-gold w-full text-center"
+          >
+            <span>Book a Session</span>
+          </motion.a>
         </div>
       </div>
     </section>

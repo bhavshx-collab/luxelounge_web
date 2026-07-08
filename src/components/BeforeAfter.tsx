@@ -50,7 +50,7 @@ function BeforeAfterSlider({ before, after, label }: { before: string; after: st
     <div className="space-y-3">
       <div
         ref={containerRef}
-        className="relative aspect-square overflow-hidden cursor-ew-resize select-none border border-[rgba(212,175,55,0.15)]"
+        className="relative aspect-square overflow-hidden cursor-ew-resize select-none border border-[rgba(212,175,55,0.15)] touch-none"
         onMouseDown={() => (isDragging.current = true)}
         onMouseUp={() => (isDragging.current = false)}
         onMouseLeave={() => (isDragging.current = false)}
@@ -96,8 +96,8 @@ export default function BeforeAfter() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section className="py-28 bg-[#111111]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section className="py-16 md:py-24 lg:py-28 bg-[#111111]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <SectionHeader
           label="Transformations"
           title="See the"

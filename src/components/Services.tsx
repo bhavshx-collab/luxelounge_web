@@ -20,8 +20,8 @@ export default function Services() {
   );
 
   return (
-    <section id="services" className="py-28 bg-[#111111]">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+    <section id="services" className="py-16 md:py-24 lg:py-28 bg-[#111111]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
         <SectionHeader
           label="Our Services"
           title="Crafted for"
@@ -30,14 +30,14 @@ export default function Services() {
         />
 
         {/* Category Filter */}
-        <div className="flex flex-wrap justify-center gap-2 mb-14">
+        <div className="flex overflow-x-auto md:flex-wrap justify-start md:justify-center gap-2 mb-10 md:mb-14 pb-3 md:pb-0 no-scrollbar -mx-4 px-4 sm:mx-0 sm:px-0 scroll-smooth">
           {categories.map((cat) => (
             <motion.button
               key={cat}
               onClick={() => setActiveCategory(cat)}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.97 }}
-              className={`px-5 py-2 text-[0.7rem] tracking-[0.2em] uppercase font-inter font-medium transition-all duration-300 border ${
+              className={`px-5 py-2 text-[0.7rem] tracking-[0.2em] uppercase font-inter font-medium transition-all duration-300 border flex-shrink-0 ${
                 activeCategory === cat
                   ? "bg-[#d4af37] text-[#111] border-[#d4af37]"
                   : "bg-transparent text-[rgba(248,245,240,0.5)] border-[rgba(212,175,55,0.2)] hover:border-[rgba(212,175,55,0.5)] hover:text-[#d4af37]"
